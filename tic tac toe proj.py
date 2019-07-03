@@ -122,7 +122,7 @@ def check():
         win(btn3["text"])
     if b1==b5 and b1==b9 and b1=="X" or b1==b5 and b1==b9 and b1=="O":
         win(btn1["text"])
-    if b3==b5 and b3==b7 and b1=="X" or b3==b5 and b3==b7 and b3=="O":
+    if b3==b5 and b3==b7 and b3=="X" or b3==b5 and b3==b7 and b3=="O":
         win(btn3["text"])
     if flag==10:
         messagebox.showinfo("Tie","Match Tied! Try Again.")
@@ -130,10 +130,7 @@ def check():
 def win(player):
     stringg="OVER! "+player+" WON THE GAME!"
     messagebox.showinfo("Congratulations",stringg)
-    window.destroy()
-
-    
-       
+    window.destroy()      
              
 label1=Label(window,text='Tic-Tac-Toe Game',font=('Times New Roman','15'),fg='black')
 label1.grid(row=0,column=0)
